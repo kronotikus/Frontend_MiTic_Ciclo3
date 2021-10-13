@@ -1,0 +1,301 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 20;
+  padding:60;
+  box-sizing:border-box;   
+ }
+ 
+.color1{
+  background-color: rgb(64, 82, 82);
+  color: white;
+
+}
+.color2{
+  background-color:#55397a;
+  color: white;
+
+}
+ 
+ 
+ 
+ .form-register{
+     width: 100%; 
+     flex-direction: column;
+     background:#24303c;
+     padding: 30px;
+     margin: none;
+     border-top: 100px;
+     border-radius: 4px;
+     font-family: 'calibri';
+     color: white;
+     
+ 
+ }
+ 
+ .form-register h4{
+     font-size: 22px;
+     margin-bottom: 20px;
+     text-align: none;
+ }
+ 
+ .controls{
+     width: 100%;
+     background: #24303c;
+     padding: 10px;
+     border-radius: 4px;
+     margin:16px;
+     border: 1px solid #1f531f;
+     font-family: 'calibri';
+     font-size: 18px;
+     box-align: none;
+     
+ }
+ 
+ 
+ .form-register p{
+ height: 40px;
+ text-align: center;
+ font-size: 18px;
+ line-height: 40px;
+ 
+ }
+ 
+ .form-register a{
+     color:white;
+     text-decoration: none;
+     border-radius: 4px;
+ 
+ }
+ 
+ .form-register a:hover{
+     color:white;
+     text-decoration: underline;
+     background:#7b5ca3;
+     border-radius: 4px;
+ 
+ }
+ .form-register .botton{
+     width: 50%;
+     background: #7b5ca3;
+     border: none;
+     padding: 12px;
+     color: white;
+     margin: 16px 16px;
+     font-size: 16px;
+     border-radius: 10px;
+     margin-left: 25%;
+     margin-right:50%;
+     
+ }
+ 
+.titulo {
+
+  padding: 18px;
+  margin:auto;
+  width: 400px; 
+  background:#24303c;
+  border-radius: 15px;
+  font-size: 25px;
+  color: white;
+  font-family: 'calibri';
+  font-style:italic;
+  box-shadow: 7px 13px 25px rgb(7, 7, 7);
+  text-align: center;
+ 
+}
+
+.pie{
+  text-align: center;
+  margin-bottom: 2px;
+  text-shadow: lightslategray;
+  font-style:calbri;
+  background-attachment: scroll;
+  background-color: rgb(62, 123, 185);
+  padding:0mm
+
+}
+
+
+
+.sideBar{
+  width: 72%;
+  border: 300px;
+  border-color: gray;
+  height: 100%;
+  flex:column;
+  background:gray;
+
+}
+.sideBarBoton{
+     width: 50%;
+     background: #7b5ca3;
+     border: none;
+     padding: 12px;
+     color: white;
+     margin: 16px 16px;
+     font-size: 16px;
+     border-radius: 10px;
+     margin-left: 25%;
+     margin-right:50%;
+
+}
+
+.botonCRUD{
+  width: 50%;
+  background: #7b5ca3;
+  border: none;
+  padding: 10px;
+  color: white;
+  margin: 16px 16px;
+  font-size: 16px;
+  border-radius: 10px;
+  margin-left: 100%;
+  
+
+}
+.botonCRUD:hover{
+  background:indigo;
+}
+
+.tabla_producto td, tabla_producto th{
+  padding: 8px;
+  border: 1px solid #dddd;
+}
+
+.tabla_producto{
+  width: 100%;
+}
+.tabla_producto th{
+  background-color:#04aa46;
+  color: white;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  
+}
+.tabla_producto tr:nth-child(even){
+  background-color: rgb(184, 181, 181);
+
+}
+.tabla_producto tr:hover{
+  background-color: #ddd;
+  cursor:pointer;
+}
+
+.tabla_ventas td, tabla_ventas th{
+  padding: 8px;
+  border: 1px solid #dddd;
+}
+
+.tabla_ventas{
+  width: 100%;
+}
+.tabla_ventas th{
+  background-color:#04aa46;
+  color: white;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  
+}
+.tabla_ventas tr:nth-child(even){
+  background-color: rgb(184, 181, 181);
+
+}
+.tabla_ventas tr:hover{
+  background-color: #ddd;
+  cursor:pointer;
+  
+}
+
+.ACCION{
+  text-align: center;
+  color:black;
+ 
+  
+}
+.ACCION fa-trash{
+  
+  color:#55397a;
+}
+
+.bodyIndex{
+  margin: 0;
+  font-family: sans-serif;
+
+}
+.headerIndex{
+  width:100%;
+  background: #4e94ab;
+
+}
+
+#btn-menu{
+  display: none;
+
+}
+
+.headerIndex label{
+  display: none;
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  border-right: 1px solid #fff;
+
+}
+.headerIndex label:hover{
+  cursor:pointer;
+  background: rgba(0,0,0,0.3);
+}
+.menu ul{
+  margin:0;
+  list-style: none;
+  padding:0;
+  display:flex;
+  justify-content: flex-end;
+
+}
+.menu li a{
+  display: block;
+  padding:15px  20px;
+  color:#fff;
+  text-decoration: none;
+
+}
+.menu li{
+  border-left: 1px solid #fff;
+}
+.menu li:hover{
+  background: rgba(0,0,0,0.3);
+
+}
+
+@media (max-width:768px){
+  .headerIndex label{
+    display:block;
+  }
+  .menu{
+    position: absolute;
+    background:#4e94ab;
+    width: 70%;
+    margin-left: -70%;
+    transition:all 0.5s;
+  }
+  .menu ul{
+    flex-direction: column;
+  
+  }
+  .menu li{
+    border-top: 1px solid #fff;
+  }
+  #btn-menu:checked ~ .menu{
+    margin:0;
+
+  }
+}
+
+
+
